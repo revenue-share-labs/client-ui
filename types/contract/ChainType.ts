@@ -1,0 +1,6 @@
+export enum ChainType {
+    ETHEREUM = 'ETHEREUM',
+    ETHEREUM_GOERLI = 'ETHEREUM_GOERLI',
+    POLYGON_MUMBAI = 'POLYGON_MUMBAI',
+    POLYGON = 'POLYGON',
+}

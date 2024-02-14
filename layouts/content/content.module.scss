@@ -1,0 +1,25 @@
+.root {
+  min-height: calc(100vh - 299px);
+}
+
+.content {
+  min-width:  1169px;
+  max-width:  1169px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.home {
+  min-width: 1300px;
+  max-width: 1300px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 130px;
+}
+
+.white {
+  background-color: var(--white);
+}

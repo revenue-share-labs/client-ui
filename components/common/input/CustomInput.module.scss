@@ -1,0 +1,122 @@
+@import 'styles/fonts.scss';
+
+.root {
+  width: 100%;
+}
+
+.input {
+  background: var(--gray01-bg) !important;
+  border-radius: 12px;
+  border: none;
+  color: var(--white);
+  height: 40px;
+
+  &::placeholder {
+    color: var(--tetriary-tx);
+    @include Text_Large-Regular;
+  }
+
+  &:hover {
+    cursor: default;
+  }
+}
+
+.none_style {
+  height: 31px;
+  background: none;
+  border: none;
+  color: var( --primary-tx);
+  @include Headline_H3;
+  padding: 0 0 5px;
+  border-bottom-color: var(--gray02-bg) !important;
+  border-radius: 0;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &::placeholder {
+    @include Headline_H3;
+    letter-spacing: -0.015em;
+    color: rgba(255, 255, 255, 0.2);
+  }
+
+  &:disabled {
+    background: none;
+    color: var( --primary-tx);
+    @include Headline_H3;
+    opacity: 1.1;
+  }
+
+  &:hover {
+    cursor: default;
+  }
+}
+
+.none_style_focused {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 0;
+}
+
+.none_style_error {
+  background: none;
+  border: none;
+  padding: 0 0 3px;
+  border-radius: 0;
+  border-bottom: 2px solid var(--error);
+  @include Headline_H3;
+
+  &::placeholder {
+    @include Headline_H3;
+    letter-spacing: -0.015em;
+    color: rgba(255, 255, 255, 0.2);
+  }
+
+  &:focus {
+    border-bottom: 2px solid var(--error);
+  }
+
+  &:hover {
+    cursor: default;
+  }
+}
+
+.errorInput {
+  background-color: var(--field-error) !important;
+  color: var(--tetriary-tx);
+  border: none;
+  height: 40px;
+
+  &::placeholder {
+    color: var(--error-placeholder);
+    @include Text_Large-Regular;
+  }
+  &:hover {
+    cursor: default;
+  }
+}
+
+.error {
+  @include Text_Medium-Regular;
+  color: var(--error);
+}
+
+.label {
+  @include Text_Large-Regular;
+  letter-spacing: -0.005em;
+  color: var(--primary-tx);
+  padding-bottom: 8px;
+}
+
+.rightSectionWithWarning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.rightSection {
+  width: 150px;
+  padding-right: 4px;
+}

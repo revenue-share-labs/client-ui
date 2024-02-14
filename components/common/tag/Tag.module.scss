@@ -1,0 +1,45 @@
+.tag {
+  width: 100%;
+  height: 24px;
+  padding: 2px 8px;
+  white-space: nowrap;
+
+  border-radius: 100px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.bg_orange {
+  background: var(--warning);
+}
+
+.bg_blue {
+  background: var(--primary-ac);
+}
+
+.bg_white {
+  background: var(--primary-tx);
+}
+
+.bg_green {
+  background: var(--success);
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-content: baseline;
+  gap: 4px;
+
+  & img {
+    padding-top: 2px;
+  }
+}
+
+.opacity {
+  opacity: 0.7;
+}
+
+.svgBlack {
+  filter: brightness(0%);
+}

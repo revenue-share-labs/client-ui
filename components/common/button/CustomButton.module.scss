@@ -1,0 +1,260 @@
+@import 'styles/fonts.scss';
+
+.root {
+  @include Text_Large-Regular;
+  padding: 0 12px;
+}
+
+.blue {
+  &:focus-visible {
+    outline: none;
+  }
+
+  &-filled {
+    background-color: var(--primary-ac) !important;
+    color: var(--primary-tx);
+
+    &:hover {
+      background-color: var(--hover-blue) !important;
+    }
+
+    &:focus {
+      background-color: var(--pressed-blue);
+      border: 1px solid var(--primary-ac) !important;
+    }
+  }
+
+  &-outlined {
+    background: none;
+    border-color: var(--pressed-blue) !important;
+    color: var(--primary-tx);
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    &:focus {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    &:disabled {
+      background: none;
+      opacity: 0.4;
+    }
+  }
+}
+
+.violet {
+  &:focus-visible {
+    outline: none;
+  }
+
+  &-filled {
+    background-color: var(--secondary-ac) !important;
+    color: var(--primary-tx);
+
+    &:hover {
+      background-color: var(--hover-violet) !important;
+    }
+
+    &:focus {
+      background-color: var(--pressed-violet);
+    }
+  }
+
+  &-outlined {
+    background: none;
+    border-color: var(--hover-violet) !important;
+    color: var(--primary-tx);
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    &:focus {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    &:disabled {
+      background: none;
+      opacity: 0.4;
+    }
+  }
+}
+
+
+.black {
+  &:focus-visible {
+    outline: none;
+  }
+
+  &-ghost {
+    background: none;
+    padding: 0;
+    border: none;
+    display: flex;
+
+    &:hover {
+      color: var(--link-tx);
+      background: none;
+
+      & svg path {
+        fill: var(--link-tx) !important;
+      }
+    }
+
+    &:focus {
+      color: var(--primary-tx);
+      background: none;
+
+      & svg path {
+        fill: var(--primary-tx) !important;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      background: none;
+    }
+  }
+
+  &-filled {
+    background-color: var(--gray01-bg);
+
+    &:hover {
+      background:var(--gray01-bg);
+    }
+
+    &:focus {
+      background-color: var(--gray01-bg);
+    }
+
+    &:disabled {
+      background-color: var(--gray01-bg);
+    }
+  }
+  &-subtle {
+    text-decoration: underline !important;
+    background: none;
+    padding: 0;
+    border: none;
+    &:hover {
+      background: none;
+    }
+
+    &:focus {
+      background: none;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      background: none;
+    }
+  }
+
+  &-outlined {
+    background: none;
+    border-color: var(--tetriary-tx) !important;
+    color: var(--primary-tx);
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    &:focus {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    &:disabled {
+      background: none;
+      opacity: 0.4;
+    }
+  }
+}
+
+.white {
+  &:focus-visible {
+    outline: none;
+  }
+
+  &-ghost {
+    background: none;
+    border: 1px solid var(--tetriary-tx);
+    display: flex;
+
+    &:hover {
+      color: var(--primary-tx);
+      background: none;
+      border: 1px solid var(--suva-grey);
+
+    }
+
+    &:focus {
+      color: var(--primary-tx);
+      background: none;
+      border: 1px solid var(--primary-tx);
+
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      background: none;
+    }
+  }
+}
+
+.light-blue {
+  &:focus-visible {
+    outline: none;
+  }
+
+  border-radius: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1px;
+
+  &-filled {
+    background-color: rgb(62, 79, 232);
+    box-shadow: rgb(62 79 234 / 30%) 0 5px 16px -1px;
+
+    &:hover {
+      background-color: var(--hover-blue) !important;
+    }
+
+    &:focus {
+      background-color: var(--pressed-blue);
+    }
+  }
+}
+
+
+.blue_disabled {
+  background: var(--primary-ac);
+  opacity: 0.4;
+
+  &:hover {
+    background: var(--primary-ac);
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+.blue_loading {
+  background: var(--primary-ac);
+}
+
+.violet_disabled {
+  background: var(--secondary-ac);
+  opacity: 0.4;
+
+  &:hover {
+    background: var(--secondary-ac);
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+.inner {
+  position: relative !important;
+}

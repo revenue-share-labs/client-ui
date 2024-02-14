@@ -1,0 +1,36 @@
+.container {
+    background: #252525;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 926px;
+    margin-top: 32px;
+
+    border: 1px solid #2e2e2e;
+    box-shadow: 0px 70px 100px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+
+    &__banner {
+        padding: 25px 33px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__info {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 25px;
+            }
+
+            &__title {
+                font-weight: 600;
+            }
+
+            &__description {
+                padding: 0 10px;
+                opacity: 0.7;
+            }
+        }
+    }
+}

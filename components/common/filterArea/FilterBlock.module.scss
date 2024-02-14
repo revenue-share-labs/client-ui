@@ -1,0 +1,108 @@
+.filtersBlock {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+
+    & .filterMainBtn {
+        position: relative;
+
+    }
+
+    & .filterClear {
+        color: var(--error);
+        font-size: 14px;
+        margin-left: var(--base2);
+        cursor: pointer;
+    }
+
+    & .filterDivider {
+        width: 2px;
+        height: 24px;
+        background-color: var(--gray01-bg);
+        margin-left: var(--base2);
+        margin-right: var(--base2);
+    }
+
+    & .filterOthers {
+
+        & button {
+            margin-right: var(--base1);
+        }
+    }
+
+    & .filterArea {
+        background-color: var(--dark02-tx);
+        min-width: 500px;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.65);
+        border-radius: 16px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        z-index: 100;
+
+        & .filterTitle {
+            padding: 16px 24px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--dark01-tx);
+
+            & span {
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            & img {
+                cursor: pointer;
+            }
+        }
+
+        & .filterFooter {
+            padding: 12px 24px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            border-top: 1px solid var(--dark01-tx);
+            gap: 12px;
+        }
+
+        & .filterRow {
+            display: flex;
+            flex-direction: column;
+            padding-top: 12px;
+            padding-bottom: 20px;
+            margin-left: 24px;
+            margin-right: 24px;
+            gap:10px;
+
+            & .title {
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: var(--base1);
+            }
+
+            & .btns {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+
+                & button {
+                    margin-right: var(--base1);
+                }
+            }
+        }
+
+        & .brdBottom {
+            border-bottom: 1px solid var(--dark01-tx);
+        }
+
+    }
+
+}

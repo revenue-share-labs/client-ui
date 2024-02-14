@@ -1,0 +1,41 @@
+.generalContainer {
+    background-color: var(--tetriary-bg);
+    color: var(--primary-tx);
+
+    display: flex;
+    flex-direction: row;
+
+    & .leftBlock {
+        width: 260px;
+        position: sticky;
+        top: 0;
+        height: 100%;
+    }
+
+    & .rightBlock {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        & .headerBlock {
+            padding: 24px;
+            height: 80px;
+            box-sizing: border-box;
+        }
+
+        & .contentBlock {
+
+        }
+    }
+}
+
+.formEditorContainer {
+    background: none;
+    & .rightBlock {
+        padding: 0;
+    }
+}
+
+.authContainer {
+    height: 100vh;
+}

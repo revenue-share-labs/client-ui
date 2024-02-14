@@ -1,0 +1,56 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background: radial-gradient(59.62% 78.33% at 43.75% 62.22%, #202020 0%, #0C0C0C 100%);
+}
+
+.scrollAreaCalc {
+  height: calc(100vh - 80px);
+}
+
+.scrollArea {
+  height: 100vh;
+}
+
+
+.form {
+  padding: 48px 127px 16px 127px;
+}
+
+.buttonPanel {
+  background: var(--secondary-bg);
+  width: inherit !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: sticky;
+  bottom: 0 !important;
+
+  .buttons, .button {
+    padding: 16px 0;
+    width: 917px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & .primaryBtns {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+  }
+
+  .button {
+    justify-content: flex-end;
+  }
+}
+
+.blur {
+  filter: blur(6px);
+  user-select: none;
+  -webkit-user-select: none;
+}

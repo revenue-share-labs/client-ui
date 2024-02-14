@@ -1,0 +1,25 @@
+.container {
+    background-color: var(--gray01-bg);
+    border-radius: var(--base3);
+    margin-top: 32px;
+    padding: 26px 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: var(--base2);
+    font-weight: 600;
+    line-height: var(--base3);
+    letter-spacing: -0.005em;
+    text-align: left;
+
+    & div {
+        margin-left: var(--base2);
+    }
+
+    & span {
+        font-weight: 400;
+        color: var(--secondary-tx);
+    }
+    
+}

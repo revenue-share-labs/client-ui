@@ -1,0 +1,65 @@
+@import 'styles/fonts';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 26px;
+
+  & .title {
+    @include Headline_H5;
+  }
+}
+
+.columnWidth {
+  width: 330px;
+}
+
+.label {
+  position: relative;
+}
+
+.shares {
+  width: 52px;
+}
+
+.address {
+  width: 112px;
+}
+
+.dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--error);
+  border-radius: 2px;
+  top: -3px;
+  right: -5px;
+}
+
+.values {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  & .column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.btns {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+
+  & .primary {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+}

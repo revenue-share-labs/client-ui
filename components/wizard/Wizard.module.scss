@@ -1,0 +1,62 @@
+@import '../../styles/fonts';
+
+.container {
+  padding: 64px 148px;
+  //max-width: 1440px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  color: var(--primary-tx);
+  background-image: url('../../public/images/back-wizard.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  @include Headline_H3;
+}
+
+.titleGrey {
+  color: var(--suva-grey);
+}
+
+.subtitle {
+  width: 508px;
+  margin-top: 16px;
+  @include Text_Large-Regular;
+  color: var(--suva-grey)
+}
+
+.bold {
+  color: var(--primary-tx);
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  margin-top: 48px;
+  margin-bottom:64px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-content: baseline;
+}
+
+.text {
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.wizard {
+  margin-top: 120px;
+}

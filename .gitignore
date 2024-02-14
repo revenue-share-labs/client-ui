@@ -1,0 +1,10 @@
+node_modules
+.next
+package-lock.json
+yarn.lock
+.DS_Store
+
+.idea/
+.idea_modules/
+.env.local
+

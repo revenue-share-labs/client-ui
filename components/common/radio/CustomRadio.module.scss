@@ -1,0 +1,63 @@
+@import 'styles/fonts.scss';
+
+.label, .labelWrapper {
+  @include Text_Large-Regular;
+  letter-spacing: -0.005em;
+  color: var(--primary-tx);
+}
+
+.rootWrapperTest {
+  & div:nth-child(2) {
+    gap: 8px;
+  }
+}
+
+.inner {
+  width: 24px;
+  height: 24px;
+}
+
+.radio {
+  width: 20px;
+  height: 20px;
+  background-color: var(--tetriary-bg);
+  border: 2px solid var(--primary-tx);
+  box-sizing: border-box;
+
+  &:checked {
+    background-color: var(--primary-tx);
+    border-color: var(--primary-tx);
+  }
+
+  &:disabled {
+    background-color: var(--tetriary-bg);
+    border: 2px solid var(--dark01-tx);
+  }
+}
+
+.icon {
+  border: 1px solid var(--dark01-tx);
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  left: calc(50% - 8px);
+}
+
+.customLabel {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.soon {
+  height: 24px;
+  width: 45px;
+  border: 1px solid var(--secondary-ac);
+  box-sizing: border-box;
+  border-radius: 100px;
+  text-align: center;
+  color: var(--primary-tx);
+  @include Text_Medium-Regular;
+}

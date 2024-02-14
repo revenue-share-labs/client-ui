@@ -1,0 +1,20 @@
+.filterContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: var(--base3);
+
+    padding-right: 24px;
+    padding-left: 24px;
+
+    & .sortBy {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        & .icon {
+            margin-left: var(--base1);
+            height: 21px;
+        }
+    }
+}

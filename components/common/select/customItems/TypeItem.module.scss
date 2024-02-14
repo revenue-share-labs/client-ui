@@ -1,0 +1,26 @@
+@import 'styles/fonts.scss';
+
+.soon {
+  height: 24px;
+  width: 50px;
+  border: 1px solid var(--secondary-ac);
+  box-sizing: border-box;
+  border-radius: 100px;
+  text-align: center;
+  color: var(--primary-tx);
+  @include Text_Medium-Regular;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.label {
+  width: 140px;
+  height: 24px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

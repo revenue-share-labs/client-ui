@@ -1,0 +1,87 @@
+@import 'styles/fonts.scss';
+
+.settings {
+  width: 926px;
+  padding: 32px;
+  box-sizing: border-box;
+  background: #1A1A1A;
+  box-shadow: 0 70px 100px rgba(0, 0, 0, 0.3);
+  border-radius: 24px;
+}
+
+.title {
+  @include Headline_H5;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.selects {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.selectLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+
+  & .name {
+    position: relative;
+
+    & .dot {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: var(--error);
+      border-radius: 2px;
+      top: -3px;
+      right: -6px;
+    }
+  }
+}
+
+.viewMode_bg {
+  background: none;
+  border: none;
+}
+
+.values {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.line {
+  width: 821px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  @include Text_Large-Regular;
+  letter-spacing: -0.005em;
+  align-items: center;
+  color: var( --primary-tx);
+
+  & .text {
+    white-space: nowrap;
+  }
+
+  & .label {
+    height: 32px;
+    padding: 4px 12px;
+    background: var( --primary-tx);
+    border: 1px solid var( --primary-tx);
+    border-radius: 100px;
+    color: var(--dark02-tx);
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+  }
+}

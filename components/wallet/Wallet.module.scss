@@ -1,0 +1,38 @@
+@import 'styles/fonts.scss';
+
+.btnConnect {
+  background-color: var(--gray01-bg);
+  border-radius: var(--base1-5);
+  @include Text_Large-Regular;
+}
+
+.wallet {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  width: 190px;
+  top: 48px;
+  right: 0;
+  padding: 16px 0;
+  z-index: 99999;
+
+  background: var(--gray01-bg);
+
+  box-shadow: 0 70px 100px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+
+  & .option {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 24px;
+    gap: 10px;
+
+    &:hover {
+      cursor: pointer;
+      background: var(--gray02-bg);
+    }
+
+  }
+}

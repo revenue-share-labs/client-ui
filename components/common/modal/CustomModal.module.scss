@@ -1,0 +1,43 @@
+@import 'styles/fonts.scss';
+
+.modal {
+  background-color: var(--dark02-tx);
+  border-radius: 24px;
+  padding: 20px 24px 24px 24px;
+  //width: 390px;
+  box-sizing: border-box;
+}
+
+.btns {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.title {
+  @include Headline_H4;
+  letter-spacing: -0.01em;
+  color: var(--primary-tx);
+  margin-bottom: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.description {
+  @include Text_Large-Regular;
+  letter-spacing: -0.009em;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 432px;
+}
+
+.loading {
+  text-align: center;
+  margin: var(--base3) auto;
+}

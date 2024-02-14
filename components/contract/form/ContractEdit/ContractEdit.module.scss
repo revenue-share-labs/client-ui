@@ -1,0 +1,18 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(59.62% 78.33% at 43.75% 62.22%, #202020 0%, #0C0C0C 100%);;
+}
+
+.skeleton {
+  &:before {
+    background-color: #1D1D1D;
+  }
+
+  &:after {
+    background: linear-gradient(193.4deg, #313131 -38.28%, #1D1D1D 114.78%);
+  }
+}

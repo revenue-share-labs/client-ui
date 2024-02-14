@@ -1,0 +1,30 @@
+@import 'styles/fonts.scss';
+
+.recipients {
+  width: 926px;
+  padding: 32px;
+  box-sizing: border-box;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  background: #1A1A1A !important;
+  box-shadow: 0 70px 100px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 24px;
+}
+
+.dividerHorizontal {
+  margin: 8px 32px;
+  height: 1px;
+  background: #313131;
+}
+
+.viewMode_bg {
+  background: none !important;
+  border: none !important;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--dark01-tx);
+}

@@ -1,0 +1,17 @@
+.bold {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.link {
+  color: #5FDA5D;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline !important;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

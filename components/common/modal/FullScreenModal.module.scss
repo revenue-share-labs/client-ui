@@ -1,0 +1,68 @@
+@import 'styles/fonts.scss';
+
+.modal {
+  padding: 0 172px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  background-color: var(--primary-bg);
+  color: var(--primary-tx);
+
+  background-image: url('../../../public/images/back_fullmodal.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  box-sizing: border-box;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  color: var(--secondary-tx);
+  margin-bottom: 10px;
+}
+
+.title {
+  @include Headline_H4;
+  letter-spacing: -0.01em;
+  color: var(--primary-tx);
+  margin-bottom: 8px;
+  font-size: 48px;
+  margin-bottom: 36px;
+}
+
+.path {
+  margin-bottom: 48px;
+  color: var(--link-tx);
+  text-decoration: underline;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  & span {
+    margin-right: 16px;
+  }
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  color: var(--secondary-tx);
+  margin-bottom: 16px;
+}
+
+.socials {
+  margin-bottom: 70px;
+
+  & img {
+    margin-right: 24px;
+  }
+}

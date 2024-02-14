@@ -1,0 +1,40 @@
+@import 'styles/fonts.scss';
+
+.progress {
+  margin-top: 32px;
+
+  & .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8px;
+    @include Text_Medium-Regular;
+
+    color: #8F8F8F;
+  }
+}
+
+.error {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: var(--error);
+}
+
+.progressBar_less_100 {
+  background-color: #3E4FEA;
+}
+
+.progressBar_equal_100 {
+  background-color: var(--success);
+}
+
+.progressBar_more_100 {
+  background-color: var(--error);
+}
+
+.font_red {
+  color: var(--error);
+}

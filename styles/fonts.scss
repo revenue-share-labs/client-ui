@@ -1,0 +1,35 @@
+@mixin Headline_H3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+@mixin Headline_H4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@mixin Headline_H5 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@mixin Text_Large-Regular {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin Text_Small-Regular {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@mixin Text_Medium-Regular {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}

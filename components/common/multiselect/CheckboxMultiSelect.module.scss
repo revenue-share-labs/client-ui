@@ -1,0 +1,30 @@
+@import 'styles/fonts.scss';
+
+.body {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 19.5px !important;
+  height: 19.5px !important;
+  background-color: var(--gray01-bg);
+  border: 2px solid white;
+
+  &:checked {
+    background-color: var(--primary-tx);
+    border-color: var(--primary-tx);
+  }
+}
+
+.label {
+  @include Text_Large-Regular;
+  letter-spacing: -0.005em !important;
+  color: var(--primary-tx) !important;
+}
+
+.icon {
+  path {
+    fill: var(--gray01-bg);
+  }
+}

@@ -1,0 +1,82 @@
+html,
+body {
+
+  padding: 0;
+  margin: 0;
+
+  /** font defaults */
+  font-family: Inter, -apple-system, sans-serif;
+  // letter-spacing: 0em;
+  font-size: 16px;
+  background-color: #000000;
+
+  /* colors */
+
+  /* backgrounds*/
+  --primary-bg: #000000;
+  --secondary-bg: #141414;
+  --tetriary-bg: #1a1a1a;
+  --gray01-bg: #2e2e2e;
+  --gray02-bg: #3e3e3e;
+  --primary-blue-bg: #536df2;
+  --primary-violet-bg: #b161e1; 
+
+  /* states */
+  --hover-blue: #3848de;
+  --pressed-blue: #3644c9;
+  --hover-violet: #9139c6;
+  --pressed-violet: #8432b6;
+  --field-error: #481e15;
+  
+  /* text */
+  --primary-tx: #ffffff;
+  --secondary-tx: #8f8f8f;
+  --tetriary-tx: #535353;
+  --dark01-tx: #313131;
+  --dark02-tx: #252525;
+  --link-tx: #89a8f9;
+
+  /* accent */
+  --primary-ac: #3e4fea;
+  --secondary-ac: #9d3dd6;
+  --suva-grey: #8F8F8F;
+
+  /* system */
+  --success: #5fda5d;
+  --warning: #ffa800;
+  --error: #f53c14;
+  --error-placeholder: #755f5a;
+
+    /* dimensions */
+  --base025: 2px;
+  --base05: 4px;
+  --base1: 8px;
+  --base1-5: 12px;
+  --base2: 16px;
+  --base2-5: 20px;
+  --base3: 24px;
+  --base4: 32px;
+  --base5: 40px;
+  --base6: 48px;
+  --base7: 56px;
+  --base8: 64px;
+  --base9: 72px;
+  --base10: 80px;
+  --base12-5: 100px;
+
+}
+
+
+
+a {
+  color: var(--link-tx);
+  text-decoration: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.nowrap {
+  white-space: nowrap;
+}

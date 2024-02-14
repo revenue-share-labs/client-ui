@@ -1,0 +1,250 @@
+.container {
+    min-height: 100vh;
+    padding: 25px 172px;
+    position: relative;
+    box-sizing: border-box !important;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    color: var(--primary-tx);
+
+    & .formContainer {
+        width: 410px;
+        display: flex;
+        flex-direction: column;
+
+        & .loginTop {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-left: 48px;
+            margin-right: 36px;
+        }
+
+        & .title {
+            font-weight: 600;
+            font-size: var(--base3);
+        }
+
+        & .about {
+            color: var(--secondary-tx);
+            margin-top: var(--base1-5);
+            margin-bottom: var(--base05);
+        }
+
+        & .backToMain {
+            display: flex;
+            flex-direction: row;
+
+            & a {
+                margin-right: var(--base2);
+                padding-top: 2px;
+            }
+        }
+
+        & .label {
+            color: var(--primary-tx);
+            font-weight: 400;
+            margin-bottom: var(--base1);
+            margin-top: 20px;
+        }
+
+        & .input {
+            margin-bottom: var(--base3);
+            background-color: var(--gray01-bg);
+            border-radius: 14px;
+            border: none;
+            color: var(--primary-tx);
+            height: var(--base6);
+        }
+
+        & .btnLogin {
+            color: var(--primary-tx);
+            background-color: var(--primary-ac);
+            border-radius: 14px;
+            width: 100%;
+            height: var(--base6);
+        }
+
+        & .pswdContainer {
+            display: flex;
+            flex-direction: column;
+            
+            & .pswdTitle{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: var(--base1);
+
+                & .pswdForgot {
+                    cursor: pointer;
+                    color: var(--tetriary-tx);
+                }
+            }
+        }
+
+        & .walletForm {
+            // padding-top: var(--base2);
+            // margin-top: var(--base2);
+            margin-left: 48px;
+            margin-right: 36px;
+        }
+
+        & .tabContainer {
+
+            & .tabsList{
+                border-color: var(--gray01-bg);
+            }
+
+            & .tab {
+                background-color: var(--primary-bg);
+                color: white;
+                border-color: var(--gray01-bg);
+            }
+
+            & .tab:hover {
+                border-color: var(--primary-blue-bg);
+            }
+            
+            & .tab[data-active] {
+                border-color: var(--primary-blue-bg);
+            }
+
+            & .tabLabel {
+                color: var(--primary-tx);
+                text-align: left;
+            }
+
+            & .label {
+                color: var(--primary-tx);
+                font-weight: 300;
+                margin-bottom: var(--base1);
+            }
+
+            & .input {
+                margin-bottom: var(--base3);
+                background-color: var(--gray01-bg);
+                border-radius: 14px;
+                border: none;
+                color: var(--primary-tx);
+                height: var(--base6);
+            }
+
+            & .innerInput {
+                padding-top: var(--base2);
+                color: var(--primary-tx);
+                
+            }
+
+            & .btnLogin {
+                margin-top: var(--base2-5);
+                color: var(--primary-tx);
+                background-color: var(--primary-ac);
+                border-radius: 14px;
+                width: 100%;
+                height: var(--base6);
+            }
+
+            & .form {
+                display: flex;
+                flex-direction: column;
+
+
+                & .btnWeb3 {
+                    width: 204px;
+                    height: 48px;
+                    background-color:transparent;
+                    margin-bottom: var(--base1-5);
+                    text-align: left;
+                }
+
+                & .btnWeb3:hover {
+                    background-color: var(--primary-ac);
+                    border-radius: 14px;
+                }
+
+
+                & .linkBlock {
+                    margin-top: var(--base2);
+                }
+
+                & .btnInner {
+                    justify-content: flex-start;
+                }
+            }
+
+            
+        }
+
+        & .social {
+            color: var(--secondary-tx);
+            margin-top: var(--base4);
+            margin-bottom: var(--base4);
+            letter-spacing: -0.5%;
+
+            & .iconSocial {
+                width: 22px;
+                height: 22px;
+                color: var(--primary-tx);
+                padding: 5px;
+                background-color: var(--gray02-bg);
+                border-radius: 6px;
+                margin-top: (var(--base1));
+                margin-right: var(--base3);
+            }
+        }
+
+        & .text {
+
+        }
+    }
+}
+
+.copyContainer {
+    position: absolute;
+    bottom: 25px;
+    right: 60px;
+    font-size: var(--base1-5);
+    color: var(--tetriary-tx);
+}
+
+.backAuth {
+    background-image: url('../../public/images/back_auth.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.backForgot {
+    background-image: url('../../public/images/back_forgot.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.backSignup {
+    background-image: url('../../public/images/back_signup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.widget {
+    height: 585px;
+}
+
+.loader {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 39px;
+    height: 39px;
+}
+
+.blur{
+    background: rgba(0, 0, 0, 0.2);
+    filter: blur(15px);
+}

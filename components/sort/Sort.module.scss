@@ -1,0 +1,93 @@
+@import 'styles/fonts.scss';
+
+.sort {
+  position: relative;
+}
+
+.details {
+  height: 24px;
+  display: flex;
+  gap: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.title {
+  @include Text_Large-Regular;
+  color: var(--suva-grey);
+}
+
+.sortType {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:8px;
+
+  & .label {
+    @include Text_Large-Regular;
+    color: var(--primary-tx)
+  }
+}
+
+.params {
+  width: 200px;
+  padding: 16px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--gray01-bg);
+  box-shadow: 0 70px 100px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+
+  position: absolute;
+  right: 0;
+  top: 41px;
+  z-index: 9999;
+}
+
+.param {
+  display: flex;
+  flex-direction: column;
+}
+
+.option, .option_selected {
+  padding: 8px 24px;
+  @include Text_Large-Regular;
+  color: var(--primary-tx);
+
+  &:hover {
+    cursor: pointer;
+    background: #3E3E3E;
+  }
+}
+
+.option_selected {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--primary-ac);
+
+  &:hover {
+    cursor: pointer;
+    background: var(--primary-ac);
+  }
+}
+
+.name {
+  padding: 8px 24px;
+  @include Text_Large-Regular;
+  color: var(--suva-grey);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #3E3E3E;
+}

@@ -1,0 +1,15 @@
+.switch_track {
+  background: var(--gray01-bg);
+  border: none;
+  width: 52px;
+  height: 28px;
+}
+
+.switch_input {
+  &:checked + .switch_track {
+    background: var(--success);
+    border: none;
+    width: 52px;
+    height: 28px;
+  }
+}

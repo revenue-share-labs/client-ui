@@ -1,0 +1,63 @@
+@import 'styles/fonts';
+
+.mutability {
+  width: 926px;
+  padding: 24px 32px;
+  box-sizing: border-box;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  background: var(--tetriary-bg) !important;
+  box-shadow: 0 70px 100px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  .left {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .tag {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+
+    & .name {
+      @include Text_Large-Regular;
+    }
+  }
+
+}
+
+.title {
+  @include Headline_H5;
+}
+
+.viewMode_bg {
+  background: none !important;
+  border: none !important;
+}
+
+.controller {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  & .recipientsLocked {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+}

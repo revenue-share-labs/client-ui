@@ -1,0 +1,391 @@
+@import "styles/fonts";
+
+$draft-background: url("../../../../../public/images/vavle-draft-blur.png");
+$published-background: url("../../../../../public/images/valve-published-blur.png");
+
+@mixin background($image) {
+  height: 100%;
+
+  @if $image {
+    background: $image;
+  }
+
+  background-size: cover;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 24px;
+}
+
+@mixin field {
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 12px;
+  color: var(--primary-tx);
+  padding: 8px 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &::placeholder {
+    letter-spacing: -0.015em;
+    color: rgba(255, 255, 255, 0.2);
+  }
+
+  &:disabled {
+    background: none;
+    color: var(--primary-tx);
+    opacity: 1.1;
+    cursor: pointer;
+    cursor: default;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    @content;
+  }
+
+  &:focus {
+    background: #2e2e2e;
+
+    border-radius: 12px;
+    cursor: text;
+  }
+
+  &__error {
+    background-color: var(--field-error) !important;
+  }
+}
+
+.header {
+  &__bg_draft {
+    @include background($draft-background);
+  }
+
+  &__bg_published {
+    @include background($published-background);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 70px 100px rgba(0, 0, 0, 0.3);
+    gap: 8px;
+    padding: 20px 32px;
+    border-radius: 24px;
+  }
+
+  .title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    .inputName {
+      position: relative;
+      min-width: 520px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+
+      &__buttons {
+        display: flex;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        gap: 8px;
+      }
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      .chain {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .address {
+        display: flex;
+        gap: 4px;
+
+        .link {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          color: #89a8f9;
+
+          .value {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+          }
+
+          .copy {
+            opacity: 0.7;
+          }
+        }
+
+        span {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .tags {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      color: var(--primary-bg);
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: -28px 0 20px 0;
+
+  .topButtons {
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+}
+
+.root {
+  min-width: 300px;
+}
+
+.input {
+  background-color: transparent;
+  border-radius: 12px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-tx);
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.iconLeft {
+  width: auto;
+
+  img {
+    border-radius: 6px;
+    padding: 6px;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
+  border: none;
+
+  &__chain {
+    @include Text_Large-Regular;
+    color: var(--primary-tx);
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &[data-selected="true"] {
+    background-color: var(--primary-ac) !important;
+    border-radius: 0;
+
+    img {
+      display: block;
+    }
+  }
+
+  &[aria-selected="true"] {
+    background-color: var(--gray01-bg);
+    border-radius: 0;
+  }
+
+  &:hover {
+    background: var(--gray02-bg);
+    border-radius: 0;
+  }
+}
+
+.item__active {
+  display: none;
+}
+
+.title {
+  width: 520px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 24px;
+
+  .version {
+    width: 121px;
+    height: 22px;
+
+    background: linear-gradient(193.4deg, #313131 -38.28%, #1d1d1d 114.78%);
+
+    border: 1px solid var(--tetriary-bg);
+    border-radius: 100px;
+
+    @include Text_Small-Regular;
+    text-align: center;
+  }
+}
+
+.details {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+
+    .text {
+      @include Text_Large-Regular;
+      letter-spacing: -0.005em;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .label {
+      font-weight: 600;
+      color: var(--dark02-tx);
+
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 100px;
+      padding: 2px 8px;
+    }
+  }
+}
+
+.tooltip {
+  background: var(--gray02-bg);
+  border-radius: 12px;
+  padding: 16px;
+  box-sizing: border-box;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+
+  &__none {
+    display: none;
+  }
+}
+
+.arrow {
+  width: 16px !important;
+  height: 16px !important;
+  top: 20px !important;
+}
+
+.titleField,
+.descriptionField {
+  position: relative;
+  margin-left: -16px;
+}
+
+.title_style {
+  height: 48px;
+  font-size: 24px;
+  width: 100%;
+  white-space: nowrap;
+  @include field;
+}
+
+.title_nostyle {
+  height: auto;
+  white-space: nowrap;
+  @include Headline_H3;
+  @include field;
+
+  &:hover {
+    cursor: default;
+    background: transparent;
+  }
+}
+
+.error input {
+  background: #481e15;
+
+  &:focus, &:hover {
+    background: #481e15;
+  }
+}
+
+.description_style {
+  min-height: 90px;
+  height: auto;
+  @include Text_Large-Regular;
+  @include field;
+}
+
+.description_nostyle {
+  min-height: 90px;
+  height: auto;
+  @include Text_Large-Regular;
+  @include field;
+
+  &:hover {
+    cursor: default;
+    background: transparent;
+  }
+}
+
+.description_count {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color: var(--suva-grey);
+}
+
+.viewlegal {
+  position: relative;
+
+  .addLink {
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+    right: 0px;
+
+    input {
+      width: 296px;
+      height: 40px;
+      background: #2E2E2E;
+      outline: none;
+      border: none;
+      color: #ffffff
+    }
+
+    .rightSection {
+      width: auto;
+      padding-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+
+    & .title {
+        color: var(--primary-tx);
+        font-size: var(--base3);
+        font-weight: 600;
+    }
+
+    & .actions {
+        display: flex;
+        flex-direction: row;
+
+        & button {
+            margin-left: var(--base3);
+        }
+
+        & .btnConnect {
+            background-color: var(--gray01-bg);
+            border-radius: var(--base1-5);
+            font-size: var(--base2);
+            font-weight: 400;
+            height: 40px;
+        }
+
+        & .btnCreate {
+            border-radius: var(--base1-5);
+            background-color: var(--primary-ac);
+            font-size: var(--base2);
+            font-weight: 400;
+            height: 40px;
+        }
+    }
+}

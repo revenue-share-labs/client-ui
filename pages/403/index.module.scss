@@ -1,0 +1,41 @@
+@import 'styles/fonts.scss';
+
+.container {
+  padding: 108px 172px;
+  max-width: 1440px;
+  min-height: 72vh;
+
+  background-color: var(--primary-bg);
+  color: var(--primary-tx);
+
+  background-image: url('../../public/images/errors/404-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.block {
+  height: 436px;
+  width: 757px;
+  margin-top: 124px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  width: 677px;
+  margin-top: 16px;
+  @include Text_Large-Regular;
+  letter-spacing: -0.005em;
+  color: var(--secondary-tx);
+}
+
+.img {
+ opacity: 0.1;
+  margin-bottom: 48px;
+}

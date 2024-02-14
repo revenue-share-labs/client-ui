@@ -1,0 +1,81 @@
+@import 'styles/fonts.scss';
+
+.body {
+  margin: 0;
+}
+
+.root {
+  min-width: 350px;
+  padding: 24px 24px;
+  border-radius: 24px;
+  box-sizing: border-box;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+  pointer-events: all;
+
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+
+  &:before {
+    display: none;
+  }
+}
+
+.root_error {
+  background: radial-gradient(52.88% 105.31% at 28.78% 26.56%, #9F1919 0%, #141414 100%);
+  border: 1px solid rgba(245, 60, 20, 0.15);
+}
+
+.root_success {
+  background: radial-gradient(83.25% 128.5% at 25.23% 14%, #205C38 0%, #141414 100%);
+  border: 1px solid rgba(95, 218, 93, 0.15);
+}
+
+.root_info {
+  background: radial-gradient(41.41% 123.5% at 36.14% 18.5%, #115B85 0%, #141414 100%);
+  border: 1px solid rgba(0, 94, 147, 0.15);
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: var(--primary-tx);
+
+  & .left {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+.description {
+  max-width: 384px;
+  @include Text_Medium-Regular;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.closeImg {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.opacity {
+  opacity: 1;
+}
