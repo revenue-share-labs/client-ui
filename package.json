@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "ENVIRONMENT=.env.production next build && next export",
+    "build": "next build && next export",
     "build:gitlab": "NODE_ENV=production env-cmd -f env/.env.gitlab next build && next export",
     "build:development": "NODE_ENV=production env-cmd -f env/.env.development next build && next export",
     "build:staging": "NODE_ENV=production env-cmd -f env/.env.staging next build && next export",
