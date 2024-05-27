@@ -1,8 +1,5 @@
-# build stage
-FROM node:18
-RUN apk update && apk add libc6
-WORKDIR /code
-COPY . ./
+FROM node:18-alpine
+COPY . .
 RUN npm install
-RUN	npm run build:production
+RUN	npm run build
 
