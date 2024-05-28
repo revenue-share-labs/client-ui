@@ -41,7 +41,7 @@ const connectors = connectorsForWallets([
             injectedWallet({ chains }),
             // rainbowWallet({ chains }),
             // walletConnectWallet({ chains }),
-            metaMaskWallet({ chains, shimDisconnect: true }),
+            // metaMaskWallet({ chains, shimDisconnect: true }),
             coinbaseWallet({ appName: 'XLA app', chains }),
         ],
     },
