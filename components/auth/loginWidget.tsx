@@ -17,7 +17,7 @@ function useHookWithRefCallback() {
         if (node) {
             // Check if a node is actually passed. Otherwise node would be null.
             // You can now do what you need to, addEventListeners, measure, etc.
-            //xl.mount('xl_auth');
+            // xl.mount('xl_auth');
         }
 
         // Save a reference to the node
