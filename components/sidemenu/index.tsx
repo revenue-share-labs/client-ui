@@ -41,7 +41,6 @@ function SideMenu() {
     return (
         <div className={styles.sideMenu}>
             <div className={styles.logo}>
-                <Image src={xlaLogo.src} alt="XLA" width={70} height={22} priority />
                 Contracts
             </div>
             <div className={styles.divider} />

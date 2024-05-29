@@ -11,7 +11,6 @@ export function RequestPassword() {
     return (
         <div className={`${styles.container} ${styles.backForgot}`}>
             <div className={styles.formContainer}>
-                <Image src={xlaLogo.src} alt="XLA" width={102} height={32} priority />
 
                 <div className={styles.title}>Request your new password</div>
                 <div className={styles.about}>

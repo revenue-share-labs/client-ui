@@ -35,7 +35,6 @@ function SuccessPage() {
     return (
         <div className={`${styles.container} ${styles.backAuth}`}>
             <div className={styles.formContainer}>
-                <Image src={xlaLogo.src} alt="XLA" width={102} height={32} priority />
 
                 <div className={styles.title}>Success!</div>
                 <div className={styles.about}>Now you can do it.</div>

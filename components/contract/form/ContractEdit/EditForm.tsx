@@ -426,16 +426,6 @@ function EditForm({
 
             <div className={styles.container}>
 
-                {!authStore.isAuthenticated && (
-                    <Banner
-                        title="Welcome to XLA Contract!"
-                        description="Log in to interact with this contract."
-                        img={<Image src={xlaLogo.src} width={74} height={22} alt="Logo xla" />}
-                        nameBtn="Log in"
-                        onClick={() => router.push('/')}
-                    />
-                )}
-
                 <div className={visibility && authStore.isAuthenticated ? '' : styles.blur}>
                     <ScrollArea className={`${isShowPanelBtn ? styles.scrollAreaCalc : styles.scrollArea}`}>
                         <form className={styles.form}>

@@ -13,7 +13,6 @@ export function Register() {
     return (
         <div className={`${styles.container} ${styles.backSignup}`}>
             <div className={styles.formContainer}>
-                <Image src={xlaLogo.src} alt="XLA" width={102} height={32} priority />
 
                 <div className={styles.title}>Sign Up to XLA Contracts</div>
                 <div className={styles.about}>

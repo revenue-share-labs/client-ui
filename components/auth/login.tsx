@@ -77,16 +77,8 @@ export const Login = () => {
                 <div className={`${styles.content}`}>
                     <div className={styles.formContainer}>
                         <div className={styles.loginTop}>
-                            <Image
-                                src={xlaLogo.src}
-                                alt="XLA"
-                                width={102}
-                                height={32}
-                                priority
-                            />
-
                             <div className={styles.title}>
-                                Login to XLA Contracts
+                                Login to Contracts
                             </div>
                         </div>
 
@@ -102,7 +94,7 @@ export const Login = () => {
                 </div>
 
                 <div className={styles.copyContainer}>
-                    Copyright © XLA 2023. All rights reserved.
+                    Copyright © RSC Labs 2024. All rights reserved.
                 </div>
             </div>
 
