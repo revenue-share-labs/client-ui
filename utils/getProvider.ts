@@ -21,6 +21,6 @@ export const getProvider = (provider: string): string => {
     case WalletProviders.WALLET_CONNECT:
         return WalletProvider.WalletConnect;
     default:
-        return '';
+        return WalletProviders.META_MASK;
     }
 };
