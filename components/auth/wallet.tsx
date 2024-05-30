@@ -55,13 +55,13 @@ function Wallet() {
                 const signature = await signMessageAsync({ message });
                 console.log('signature=', signature);
                 const provider = connector ? getProvider(connector?.id) : 'META_MASK';
+                console.log('provider=', provider);
+                console.log('connector?.id=', connector?.id);
+                console.log('connector=', connector);
                 const res = await AuthService.nonceSign(message, signature, provider);
                 const { data } = res;
                 authStore.setIsAuthenticated(true);
                 setCookies(TOKEN_COOKIE_NAME, data?.token);
-                console.log('provider=', provider);
-                console.log('connector?.id=', connector?.id);
-                console.log('connector=', connector);
 
                 const token = JSON.parse(atob(data.token.split('.')[1]));
                 setUserId(token?.sub);
