@@ -49,9 +49,11 @@ function Wallet() {
 
             const { data } = await AuthService.getNonce(userData.address);
             const message = data.nonce;
+            console.log('message=', message);
 
             try {
                 const signature = await signMessageAsync({ message });
+                console.log('signature=', signature);
                 const provider = connector ? getProvider(connector?.id) : 'META_MASK';
                 const res = await AuthService.nonceSign(message, signature, provider);
                 const { data } = res;
