@@ -57,9 +57,9 @@ function Wallet() {
                 const { data } = res;
                 authStore.setIsAuthenticated(true);
                 setCookies(TOKEN_COOKIE_NAME, data?.token);
-                console.log("provider=", provider);
-                console.log("connector?.id=", connector?.id);
-                console.log("connector=", connector);
+                console.log('provider=', provider);
+                console.log('connector?.id=', connector?.id);
+                console.log('connector=', connector);
 
                 const token = JSON.parse(atob(data.token.split('.')[1]));
                 setUserId(token?.sub);
