@@ -52,7 +52,7 @@ function Wallet() {
 
             try {
                 const signature = await signMessageAsync({ message });
-                const provider = connector ? getProvider(connector?.id) : '';
+                const provider = connector ? getProvider(connector?.id) : 'META_MASK';
                 const res = await AuthService.nonceSign(message, signature, provider);
                 const { data } = res;
                 authStore.setIsAuthenticated(true);
